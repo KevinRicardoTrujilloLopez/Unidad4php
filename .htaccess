@@ -12,5 +12,6 @@ RewriteRule ^products/update/([^\/]+)/?$ views/products/update.php?slug=$1 [L]
 
 
 
+
 #RewriteCond %{REQUEST_URI} ^\/404/$
 #RewriteRule ^(.*)$ /views/errors/404.php [L]

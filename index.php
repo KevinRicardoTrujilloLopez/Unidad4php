@@ -47,11 +47,16 @@
               <h4 class="f-w-500 mb-1">Login with your email</h4>
               <p class="mb-3">Don't have an Account? <a href="register-v2.html" class="link-primary ms-1">Create Account</a></p>
               <div class="mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Email Address" />
-              </div>
-              <div class="mb-3">
-                <input type="password" class="form-control" id="floatingInput1" placeholder="Password" />
-              </div>
+
+              <form method="POST" action="app/AuthController.php">
+				    <label for="exampleInputEmail1" class="form-label">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
+				    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+				  </div>
+          <div class="mb-3">
+				    <label for="exampleInputPassword1" class="form-label">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
+				  </div>
               <div class="d-flex mt-1 justify-content-between align-items-center">
                 <div class="form-check">
                   <input class="form-check-input input-primary" type="checkbox" id="customCheckc1" checked="" />
@@ -62,8 +67,12 @@
                 </a>
               </div>
               <div class="d-grid mt-4">
-                <button type="button" class="btn btn-primary">Login</button>
+              <button type="submit" class="btn btn-primary col-12">
+				  	Submit
+				  </button>
+          <input type="hidden" name="action" value="login">
               </div>
+              <form/>
               <div class="saprator my-3">
                 <span>Or continue with</span>
               </div>

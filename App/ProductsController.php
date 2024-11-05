@@ -149,11 +149,11 @@ class ProductsController
 
 		if (isset($response->code) && $response->code > 0) {
 			
-			header("Location: ../home.php?status=ok");
+			header("Location: ../products/?");
 
 		}else{
 			
-			header("Location: ../home.php?status=error");
+			header("Location: ../products/?");
 		}
 	}
 
@@ -183,11 +183,11 @@ class ProductsController
 
 		if (isset($response->code) && $response->code > 0) {
 			
-			header("Location: ../home.php?status=ok");
+			header("Location: ../products/?");
 
 		}else{
 			
-			header("Location: ../home.php?status=error");
+			header("Location: ../products/?");
 		}
 
 	}
@@ -216,11 +216,11 @@ class ProductsController
 
 		if (isset($response->code) && $response->code > 0) {
 			
-			header("Location: ../home.php?status=ok");
+			header("Location:  ../products/?");
 
 		}else{
 			
-			header("Location: ../home.php?status=error");
+			header("Location:  ../products/?");
 		}
 	}
 }
